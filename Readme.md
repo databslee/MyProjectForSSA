@@ -5,8 +5,11 @@
 
 ## Project Requirements
 Language : Scala 2.11.0
+
 Build Tool : SBT
+
 Frameworks : Spark 2.3, Apache Kafka 2.0
+
 Database : Postgresql 9.6
 
 ## Project Setup

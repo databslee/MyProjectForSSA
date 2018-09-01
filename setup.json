@@ -1,0 +1,1 @@
+{"PostgreID":"postgres","PostgrePWD":"0000","PostgreURL":"jdbc:postgresql://localhost:5432/task","KafkaServer":"localhost:9092", "KafkaProducerTopic1":"booking", "KafkaProducerTopic2":"short_trip"}

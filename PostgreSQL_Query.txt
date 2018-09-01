@@ -1,0 +1,27 @@
+create table driver
+(
+	id BIGINT primary key, 
+	date_created TIMESTAMP not null, 
+	name CHARACTER VARYING(255) not null
+);
+create table passenger
+(
+	id BIGINT primary key, 
+	date_created TIMESTAMP not null, 
+	name CHARACTER VARYING(255) not null
+);
+create table booking
+(
+	id BIGINT primary key, 
+	date_created TIMESTAMP  not null, 
+	id_driver BIGINT references driver (id),
+	id_passenger BIGINT references passenger (id),
+	rating INT  not null, 
+	start_date TIMESTAMP  not null, 
+	end_date TIMESTAMP  not null,  
+	tour_value BIGINT  not null
+);
+
+create index driver_idx on driver(id);
+create index passenger_idx on passenger(id);
+create index booking_idx on booking(id, id_driver, id_passenger);
